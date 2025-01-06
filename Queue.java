@@ -17,7 +17,7 @@ public class Queue {
         getFront();
         deQueue();
         deQueue();
-        deQueue();
+        System.out.println(queue[size]);
     }
 
     static void capacity(int amount) {
