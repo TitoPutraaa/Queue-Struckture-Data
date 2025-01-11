@@ -6,6 +6,7 @@ public class Sircuit {
     static int[] queue = new int[4];
     static int front = -1;
     static int rear = -1;
+    static Scanner sc = new Scanner(System.in);
 
 
     static boolean isFull() {
@@ -28,7 +29,6 @@ public class Sircuit {
             queue[rear] = value;
             System.out.println(Arrays.toString(queue));
         }
-
     }
 
     // menghapus value 
@@ -45,6 +45,14 @@ public class Sircuit {
             }
         }
         System.out.println(Arrays.toString(queue));
+    }
+
+    // scan value 
+    static void enScan() {
+        for (int i = 0; i < queue.length; i++) {
+            int[] scan = sc.nextInt();
+            queue(scan[i]);
+        }
     }
 
     public static void main(String[] args) {
