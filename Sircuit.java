@@ -50,19 +50,14 @@ public class Sircuit {
     // scan value 
     static void enScan() {
         for (int i = 0; i < queue.length; i++) {
-            int[] scan = sc.nextInt();
-            queue(scan[i]);
+            int scan = sc.nextInt();
+            enQueue(scan);
+            System.out.println(Arrays.toString(queue));
         }
     }
 
     public static void main(String[] args) {
-        enQueue(1);
-        enQueue(2);
-        enQueue(3);
-        enQueue(4);
-        enQueue(5);
-        deQueue();
-        enQueue(5);
+        enScan();
 
     }
 }
