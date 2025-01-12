@@ -44,20 +44,23 @@ public class Sircuit {
                 front = (front + 1) % queue.length;
             }
         }
+        System.out.println("deQueue");
         System.out.println(Arrays.toString(queue));
     }
 
     // scan value 
     static void enScan() {
+        System.out.println("enQueue");
         for (int i = 0; i < queue.length; i++) {
+            System.out.print("value : ");
             int scan = sc.nextInt();
             enQueue(scan);
-            System.out.println(Arrays.toString(queue));
         }
     }
 
     public static void main(String[] args) {
         enScan();
+        deQueue();
 
     }
 }
